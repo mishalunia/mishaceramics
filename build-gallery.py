@@ -83,7 +83,7 @@ def work_page(title: str, filename: str, alt: str) -> str:
       </nav>
       <div id="social" class="social_icons">
         <ul>
-          <li><a class="social-icon-link" href="https://www.instagram.com/mishaisnotdeadyet/" target="_blank" rel="noopener" aria-label="Instagram">{INSTA_SVG}</a></li>
+          <li><a class="social-icon-link" href="https://www.instagram.com/misha.lunia/" target="_blank" rel="noopener" aria-label="Instagram">{INSTA_SVG}</a></li>
         </ul>
       </div>
     </header>

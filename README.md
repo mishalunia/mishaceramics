@@ -8,7 +8,7 @@ Artist site for ceramics and a small shop.
 - [Shop](shop.html) — cups and mugs
 - [About](about.html)
 
-Instagram: [mishaisnotdeadyet](https://www.instagram.com/mishaisnotdeadyet/)  
+Instagram: [misha.lunia](https://www.instagram.com/misha.lunia/)  
 
 ## Run locally
 
