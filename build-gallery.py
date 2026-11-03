@@ -117,11 +117,27 @@ def work_page(title: str, filename: str, alt: str) -> str:
 """
 
 
+def current_order() -> list[str]:
+    """Image filenames in the order they already appear in index.html."""
+    text = INDEX.read_text(encoding="utf-8")
+    start, end = text.find(START), text.find(END)
+    if start == -1 or end == -1:
+        return []
+    return re.findall(r'src="images/gallery/([^"]+)"', text[start:end])
+
+
 def gallery_files() -> list[Path]:
+    """New photos first (newest first), then existing tiles in their current order.
+
+    Keeping the existing order matters on GitHub Actions, where every file
+    gets the same checkout time and sorting by mtime alone is arbitrary.
+    """
     GALLERY_DIR.mkdir(parents=True, exist_ok=True)
     files = [p for p in GALLERY_DIR.iterdir() if p.is_file() and p.suffix.lower() in EXTS]
-    files.sort(key=lambda p: p.stat().st_mtime, reverse=True)
-    return files
+    order = current_order()
+    new = sorted((p for p in files if p.name not in order), key=lambda p: p.stat().st_mtime, reverse=True)
+    old = sorted((p for p in files if p.name in order), key=lambda p: order.index(p.name))
+    return new + old
 
 
 def main() -> None:
