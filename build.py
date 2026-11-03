@@ -225,7 +225,6 @@ def main() -> None:
         <img src="images/about/portrait.jpg" alt="Misha Lunia" />
       </div>
       <div class="cv">
-        <p class="cv-rule">...</p>
         <p><b>SELECTED EXHIBITIONS</b></p>
         <p>No exhibitions yet.</p>
         <p class="cv-rule section">...</p>
