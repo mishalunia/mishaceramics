@@ -599,16 +599,10 @@ html.lightbox-active body {
   margin-top: 32px;
 }
 
-.cv-rule {
+.cv-divider {
   border: 0;
-  text-align: center;
-  color: #ccc;
-  letter-spacing: 0.2em;
-  margin: 0 0 28px;
-}
-
-.cv .cv-rule.section {
-  margin: 56px 0 36px;
+  border-top: 1px solid rgba(68, 68, 68, 0.35);
+  margin: 48px 0 32px;
 }
 
 /* Shop */
