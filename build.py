@@ -72,7 +72,7 @@ def page(title: str, active: str, body: str, extra_head: str = "", prefix: str =
   <title>{title}</title>
   <meta name="description" content="Artist site: art gallery, shop, and about." />
   <link rel="icon" href="{prefix}images/favicon.png?v=2" type="image/png" />
-  <link rel="stylesheet" href="{prefix}css/style.css?v=3" />
+  <link rel="stylesheet" href="{prefix}css/style.css?v=4" />
   {extra_head}
 </head>
 <body class="{body_class}">

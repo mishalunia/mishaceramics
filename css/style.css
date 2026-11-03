@@ -668,6 +668,10 @@ html.lightbox-active body {
   margin: 0 0 28px;
 }
 
+.cv .cv-rule.section {
+  margin: 56px 0 36px;
+}
+
 /* Classes */
 .collection-tabs {
   display: flex;
