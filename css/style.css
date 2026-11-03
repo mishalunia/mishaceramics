@@ -86,8 +86,7 @@ h1,
 h2,
 h3,
 .page-heading,
-.product-card .name,
-.piece-info h2 {
+.product-card .name {
   font-family: var(--font-heading);
 }
 
@@ -144,27 +143,6 @@ h3,
   height: 18px;
   display: block;
   overflow: visible;
-}
-
-#share_button a {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  text-transform: lowercase;
-  color: var(--icon);
-  padding: 0 6px;
-  text-decoration: none;
-}
-
-#share_button a:hover {
-  color: var(--hover);
-}
-
-.post_text {
-  margin-top: 12px;
-  width: 150px;
-  color: var(--muted);
-  font-size: 12px;
-  line-height: 1.2;
 }
 
 #content {
@@ -231,45 +209,6 @@ body.gallery #content {
 
 .asset .black::after {
   content: "coming soon";
-}
-
-.piece-detail {
-  scroll-margin-top: 72px;
-  padding: 28px 2% 80px;
-}
-
-.piece-up {
-  display: inline-block;
-  background: none;
-  border: 0;
-  color: #2c2c2c;
-  cursor: pointer;
-  font-size: 14px;
-  margin-bottom: 20px;
-  padding: 0;
-}
-
-.piece-detail-inner {
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 40px;
-  align-items: start;
-  max-width: 1100px;
-}
-
-.piece-detail-inner img {
-  width: 100%;
-}
-
-.piece-info h2 {
-  font-size: 22px;
-  font-weight: 400;
-  color: #111;
-  margin-bottom: 12px;
-}
-
-.piece-info p {
-  color: var(--text);
 }
 
 .work-page {
@@ -672,28 +611,7 @@ html.lightbox-active body {
   margin: 56px 0 36px;
 }
 
-/* Classes */
-.collection-tabs {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  list-style: none;
-  margin: 0 0 28px 2%;
-  flex-wrap: wrap;
-}
-
-.collection-tabs a {
-  font-family: var(--font-heading);
-  font-size: 22px;
-  color: #444;
-  padding: 8px 12px;
-}
-
-.collection-tabs a:hover,
-.collection-tabs a.active {
-  color: var(--hover);
-}
-
+/* Shop */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 280px));
@@ -917,8 +835,7 @@ body.product .back-link {
   }
 
   .about-hero,
-  .product-detail,
-  .piece-detail-inner {
+  .product-detail {
     grid-template-columns: 1fr;
   }
 
@@ -944,9 +861,5 @@ body.product .back-link {
   .work-page img,
   .work-page .work-more {
     width: 100%;
-  }
-
-  .collection-tabs a {
-    font-size: 16px;
   }
 }
