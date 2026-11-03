@@ -651,6 +651,11 @@ html.lightbox-active body {
   font-weight: 600;
 }
 
+.cv p a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .cv .section {
   margin-top: 32px;
 }

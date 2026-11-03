@@ -228,6 +228,9 @@ def main() -> None:
         <p class="cv-rule">...</p>
         <p><b>SELECTED EXHIBITIONS</b></p>
         <p>No exhibitions yet.</p>
+        <p class="section"><b>OTHER ART PROJECTS</b></p>
+        <p><a href="https://medium.com/@mishalunia/wildlife-photos-53c04e478f65" target="_blank" rel="noopener">Wildlife Photography</a></p>
+        <p><a href="https://medium.com/@mishalunia/sci-comm-design-work-covid-edition-8f8d4ff00d57" target="_blank" rel="noopener">Sci-Comm Design Work: COVID Edition</a></p>
         <!--
         <p class="year">2022</p>
         <p>Slabs for the Lobster Paw, Fraser Cultural Center, Tatamagouche, NS</p>
