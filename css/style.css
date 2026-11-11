@@ -272,7 +272,7 @@ body.gallery #content {
 
 body.work .back-link {
   display: inline-block;
-  margin: 0 0 8px 2%;
+  margin: 0 0 8px;
   text-align: left;
   font-size: 15.5px;
 }
