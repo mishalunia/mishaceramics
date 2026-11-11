@@ -279,6 +279,15 @@ body.work .back-link {
   font-size: 15.5px;
 }
 
+body.work .back-link .label {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+body.work .back-link .arrow {
+  font-size: 12px;
+}
+
 .work-more {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

@@ -63,7 +63,7 @@ def work_page(title: str, filename: str, alt: str) -> str:
   <title>{t}</title>
   <meta name="description" content="Artist site: art gallery, shop, and about." />
   <link rel="icon" href="../images/favicon.svg?v=3" type="image/svg+xml" />
-  <link rel="stylesheet" href="../css/style.css?v=14" />
+  <link rel="stylesheet" href="../css/style.css?v=16" />
 </head>
 <body class="content work">
   <div class="site">
@@ -88,7 +88,7 @@ def work_page(title: str, filename: str, alt: str) -> str:
       </div>
     </header>
     <main id="content">
-      <a class="back-link" href="../index.html">← art gallery</a>
+      <a class="back-link" href="../index.html"><span class="arrow">←</span> <span class="label">art gallery</span></a>
       <article class="work-page">
         <div class="work-layout">
           <img class="work-hero" src="../images/gallery/{f}" alt="{a}" />
