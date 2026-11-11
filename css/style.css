@@ -279,12 +279,12 @@ body.work .back-link {
   font-size: 15.5px;
 }
 
-body.work .back-link .label {
+.back-link .label {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 
-body.work .back-link .arrow {
+.back-link .arrow {
   font-size: 12px;
 }
 
