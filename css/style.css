@@ -274,7 +274,7 @@ body.work .back-link {
   display: inline-block;
   position: relative;
   top: 12px;
-  margin: 0 0 8px;
+  margin: 24px 0 8px;
   text-align: left;
   font-size: 15.5px;
 }
@@ -881,7 +881,7 @@ body.product .back-link {
   body.work .back-link {
     display: block;
     max-width: 520px;
-    margin: 0 auto 8px;
+    margin: 24px auto 8px;
   }
 
   .work-page img,
