@@ -858,8 +858,13 @@ body.product .back-link {
     padding-right: 0;
   }
 
-  .work-page .work-hero {
-    margin: 0 auto;
+  .work-page .work-hero,
+  .work-info,
+  .work-process {
+    width: 100%;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /* Same width as the centred photo so the link starts at its left edge. */
