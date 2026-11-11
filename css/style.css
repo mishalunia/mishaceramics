@@ -737,6 +737,7 @@ html.lightbox-active body {
 
 body.product .back-link {
   font-size: 15.5px;
+  margin-top: 24px;
 }
 
 .toast {
