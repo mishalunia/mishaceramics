@@ -68,15 +68,15 @@ def work_page(title: str, filename: str, alt: str) -> str:
 <body class="content work">
   <div class="site">
     <aside class="mobile-bar">
-      <a href="../index.html" class="logo">MISHA<span class="logo-break"></span>LUNIA</a>
+      <a href="../" class="logo">MISHA<span class="logo-break"></span>LUNIA</a>
       <button class="hamburger" aria-label="Menu"><span></span></button>
     </aside>
     <button type="button" class="cart-btn" aria-label="Cart">{CART_SVG}</button>
     <header class="nav-wrapper">
-      <a href="../index.html" class="logo">MISHA<span class="logo-break"></span>LUNIA</a>
+      <a href="../" class="logo">MISHA<span class="logo-break"></span>LUNIA</a>
       <nav id="menu">
         <ul>
-        <li class="item selected"><a href="../index.html">art gallery</a></li>
+        <li class="item selected"><a href="../">art gallery</a></li>
         <li class="item"><a href="../shop.html">shop</a></li>
         <li class="item"><a href="../about.html">about</a></li>
         </ul>
@@ -88,7 +88,7 @@ def work_page(title: str, filename: str, alt: str) -> str:
       </div>
     </header>
     <main id="content">
-      <a class="back-link" href="../index.html"><span class="arrow">←</span> <span class="label">art gallery</span></a>
+      <a class="back-link" href="../"><span class="arrow">←</span> <span class="label">art gallery</span></a>
       <article class="work-page">
         <div class="work-layout">
           <img class="work-hero" src="../images/gallery/{f}" alt="{a}" />
