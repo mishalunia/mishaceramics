@@ -862,6 +862,13 @@ body.product .back-link {
     margin: 0 auto;
   }
 
+  /* Same width as the centred photo so the link starts at its left edge. */
+  body.work .back-link {
+    display: block;
+    max-width: 520px;
+    margin: 0 auto 8px;
+  }
+
   .work-page img,
   .work-page .work-more {
     width: 100%;
