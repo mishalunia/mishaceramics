@@ -77,8 +77,8 @@ def work_page(title: str, filename: str, alt: str) -> str:
       <nav id="menu">
         <ul>
         <li class="item selected"><a href="../">art gallery</a></li>
-        <li class="item"><a href="../shop.html">shop</a></li>
-        <li class="item"><a href="../about.html">about</a></li>
+        <li class="item"><a href="../shop">shop</a></li>
+        <li class="item"><a href="../about">about</a></li>
         </ul>
       </nav>
       <div id="social" class="social_icons">
@@ -156,7 +156,7 @@ def main() -> None:
             page.write_text(work_page(title, path.name, title), encoding="utf-8")
             print("created", page.name)
         tiles.append(
-            f'        <a class="asset" href="work/{html.escape(slug)}.html"><img src="images/gallery/{html.escape(path.name)}" alt="{html.escape(title)}" /></a>'
+            f'        <a class="asset" href="work/{html.escape(slug)}"><img src="images/gallery/{html.escape(path.name)}" alt="{html.escape(title)}" /></a>'
         )
 
     coming = max(0, TOTAL_TILES - len(tiles))
