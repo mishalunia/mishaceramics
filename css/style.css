@@ -272,6 +272,8 @@ body.gallery #content {
 
 body.work .back-link {
   display: inline-block;
+  position: relative;
+  top: 12px;
   margin: 0 0 8px;
   text-align: left;
   font-size: 15.5px;
