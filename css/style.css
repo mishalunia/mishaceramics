@@ -854,6 +854,14 @@ body.product .back-link {
     grid-template-columns: 1fr;
   }
 
+  .work-page {
+    padding-right: 0;
+  }
+
+  .work-page .work-hero {
+    margin: 0 auto;
+  }
+
   .work-page img,
   .work-page .work-more {
     width: 100%;
