@@ -62,7 +62,7 @@ def work_page(title: str, filename: str, alt: str) -> str:
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{t}</title>
   <meta name="description" content="Artist site: art gallery, shop, and about." />
-  <link rel="icon" href="../images/favicon.svg?v=3" type="image/svg+xml" />
+  <link rel="icon" href="data:," />
   <link rel="stylesheet" href="../css/style.css?v=19" />
 </head>
 <body class="content work">
