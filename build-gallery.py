@@ -63,7 +63,7 @@ def work_page(title: str, filename: str, alt: str) -> str:
   <title>{t}</title>
   <meta name="description" content="Artist site: art gallery, shop, and about." />
   <link rel="icon" href="data:," />
-  <link rel="stylesheet" href="../css/style.css?v=19" />
+  <link rel="stylesheet" href="../css/style.css?v=20" />
 </head>
 <body class="content work">
   <div class="site">
@@ -110,8 +110,7 @@ def work_page(title: str, filename: str, alt: str) -> str:
       </article>
     </main>
   </div>
-  <div class="toast"></div>
-  <script src="../js/site.js?v=3"></script>
+  <script src="../js/site.js?v=4"></script>
 </body>
 </html>
 """

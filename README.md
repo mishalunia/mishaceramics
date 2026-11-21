@@ -15,10 +15,10 @@ Instagram: [mishaaceramics](https://www.instagram.com/mishaaceramics/)
 From this folder:
 
 ```bash
-python3 -m http.server 8000
+npx serve
 ```
 
-Then open [http://localhost:8000](http://localhost:8000).
+Then open the address it prints. Use `serve` rather than `python3 -m http.server`, because links have no `.html` (`/about`, `/shop`) and `serve` handles that the same way GitHub Pages does.
 
 ## Add a gallery photo
 
@@ -46,7 +46,7 @@ The name is stacked on desktop (MISHA / LUNIA) and one line on mobile.
 | 12px | Gallery “coming soon” labels |
 | 13px | Shop “out of stock”, cart empty text, toast |
 | 14px | Body copy, nav links, Add to Cart |
-| 15px | ← shop / ← art gallery |
+| 15.5px | ← shop / ← art gallery |
 | 16px | About section headings, shop card prices |
 | 18px | Cart panel title, name in the mobile header |
 | 20px | Product page price |
