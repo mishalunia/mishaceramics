@@ -2,33 +2,52 @@
 
 Artist site for ceramics and a small shop.
 
-**Pages**
-
-- [Art gallery](index.html)
-- [Shop](shop.html) — cups and mugs
-- [About](about.html)
+Live at [mishalunia.com/mishaceramics](https://mishalunia.com/mishaceramics/): art gallery, shop (cups and mugs) and about.
 
 Instagram: [mishaaceramics](https://www.instagram.com/mishaaceramics/)  
 
+## How the site is built
+
+GitHub Pages builds the site with Jekyll on every push. There is no build step to run yourself.
+
+- `_layouts/default.html`: the page frame (head, sidebar, nav, cart button, scripts). Every page uses it.
+- `_includes/header.html`: the sidebar and nav. Change the nav here once and every page updates.
+- `_layouts/work.html`: the artwork page template.
+- `_work/`: one short file per artwork.
+- `index.html`, `shop.html`, `about.html`, `classes/`: the other pages; each holds only its own content.
+
+CSS and JS links get a fresh `?v=` number on every build, so browsers always pick up changes.
+
+## Add an artwork
+
+1. Put the main photo in `images/gallery/`, for example `bowl.jpg`.
+2. Put any process photos in `images/work/bowl/`.
+3. Create `_work/bowl.md`:
+
+```markdown
+---
+title: Bowl
+order: 6
+image: bowl.jpg
+alt: "Short description of the main photo"
+process:
+  - src: bowl/process-01.jpg
+    alt: "Short description of this photo"
+---
+A sentence or two about the piece.
+```
+
+It appears in the art gallery at position `order` (smallest first) and gets its own page at `/work/bowl`. Leave out `process:` if there are no process photos. To reorder the gallery, change the `order` numbers.
+
 ## Run locally
 
-From this folder:
+With Docker running, build the site exactly as GitHub Pages does:
 
 ```bash
-npx serve
+docker run --rm -v "$PWD":/src -w /src -e GITHUB_WORKSPACE=/src -e INPUT_SOURCE=. -e INPUT_DESTINATION=./_site -e INPUT_FUTURE=false -e INPUT_VERBOSE=false -e INPUT_BUILD_REVISION=local -e INPUT_TOKEN= ghcr.io/actions/jekyll-build-pages:v1.0.13
 ```
 
-Then open the address it prints. Use `serve` rather than `python3 -m http.server`, because links have no `.html` (`/about`, `/shop`) and `serve` handles that the same way GitHub Pages does.
-
-## Add a gallery photo
-
-Put the file in `images/gallery/` (jpg, png, or webp). Name it after the piece, like `bowl.png`. Then run:
-
-```bash
-python3 build-gallery.py
-```
-
-That adds it to the art gallery and creates `work/bowl.html` if it does not exist yet. You can edit that page for the write-up and extra photos. If you push a new image without running the script, GitHub will build the page for you.
+The built site is in `_site/` (not committed). Serve it under `/mishaceramics/` to match the live address.
 
 ## Fonts and sizes
 

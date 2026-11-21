@@ -1,0 +1,30 @@
+# Built by GitHub Pages (Jekyll). Served at https://mishalunia.com/mishaceramics/
+url: https://mishalunia.com
+baseurl: /mishaceramics
+description: "Artist site: art gallery, shop, and about."
+
+# One file per artwork in _work/ becomes /work/<file name>
+collections:
+  work:
+    output: true
+    permalink: /work/:name
+
+defaults:
+  - scope:
+      type: pages
+    values:
+      layout: default
+  - scope:
+      type: work
+    values:
+      layout: work
+      nav: gallery
+      body_class: content work
+
+# How many gallery tiles to show in total; the rest are "coming soon" placeholders.
+gallery_tiles: 14
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

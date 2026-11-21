@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ site.description }}" />
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}" />
+</head>
+<body class="{{ page.body_class }}">
+  <div class="site">
+{% include header.html %}
+    <main id="content">
+{{ content }}
+    </main>
+  </div>
+  <script src="{{ '/js/site.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
+</body>
+</html>

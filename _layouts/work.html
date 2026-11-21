@@ -1,0 +1,25 @@
+---
+layout: default
+---
+      <a class="back-link" href="{{ '/' | relative_url }}"><span class="arrow">←</span> <span class="label">art gallery</span></a>
+      <article class="work-page">
+        <div class="work-layout">
+          <img class="work-hero" src="{{ '/images/gallery/' | append: page.image | relative_url }}" alt="{{ page.alt | escape }}" />
+          <div class="work-info">
+            <h1>{{ page.title | upcase }}</h1>
+            <div class="work-copy">
+              {{ content }}
+            </div>
+          </div>
+        </div>
+        {%- if page.process %}
+        <div class="work-process">
+          <h2>PROCESS IMAGES</h2>
+          <div class="work-more">
+            {%- for img in page.process %}
+            <img src="{{ '/images/work/' | append: img.src | relative_url }}" alt="{{ img.alt | escape }}" />
+            {%- endfor %}
+          </div>
+        </div>
+        {%- endif %}
+      </article>
